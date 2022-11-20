@@ -38,6 +38,7 @@ const Input = ({name, mask, searchArray, value, onChange}:InputProps) => {
         <div>
             <input
                 type="text"
+                name={name}
                 className={filteredArray.length === 0 ? "phone-input phone-input_status_no-match" :"phone-input"}
                 pattern={formatNumber(value, mask)}
                 maxLength={mask.length}
